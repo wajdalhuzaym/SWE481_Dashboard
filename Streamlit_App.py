@@ -34,7 +34,7 @@ st.markdown("""
 
 @st.cache_data
 def load_valid_ids():
-    ids_df = pd.read_excel(r"Data\student_ids_list.xlsx")
+    ids_df = pd.read_excel(r"Data/student_ids_list.xlsx")
     return ids_df.iloc[:, 0].astype(str).tolist()
 
 @st.cache_data
